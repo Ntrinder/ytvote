@@ -1,0 +1,4 @@
+<p>songlist works!</p>
+<ng-container *ngFor="let song of songList">
+    <app-song [songItem]="song" (songItemChange)="updateSongItem($event)"></app-song>
+</ng-container>

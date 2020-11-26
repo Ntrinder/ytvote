@@ -1,0 +1,4 @@
+<form [formGroup]="searchForm" (ngSubmit)="search(searchForm.value)">
+    <input type="text" placeholder="Enter a song name!" formControlName="searchCriteria">
+    <button type="submit">Add to list</button>
+</form>
